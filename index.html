@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<title>Frontend Mentor | Interactive card details form</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<style>
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+</style>
+<body>
+
+  <main>
+    <div id="other-container">
+      <div id="front">
+        <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+          <path
+            d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+            stroke="#fff" />
+        </svg>
+        
+        <p id="front-number">
+          0000 0000 0000 0000
+        </p>
+
+        <div id="front-name-months">
+          <p id="front-name">JANE APPLESSED</p>
+          <P id="front-months"><span id="m">00</span>/<span id="y">00 </span></P>
+        </div>
+
+
+      </div>
+      <div id="back">
+        <p id="back-cvv">000</p>
+      </div>
+      
+    </div>
+
+
+
+
+
+    <div id="form-container">
+    <div id="thanks">
+      <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="40" r="40" fill="url(#a)" />
+        <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+        <defs>
+          <linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#6348FE" />
+            <stop offset="1" stop-color="#610595" />
+          </linearGradient>
+        </defs>
+      </svg>
+    
+      <h2 id="header">THANK YOU!</h2>
+      <p>We've added your card details</p>
+      <button type="button" id="contiune">Continue</button>
+    </div>
+
+
+    
+    <form id="form">
+
+  <div id="cardName-container">
+    <label for="card-name">CARDHOLDER NAME</label>
+    <input type="text" class="form-input" id="card-name" placeholder="e.g Jane Appleseed" maxlength="30">
+  <div class="err" id="nameErr"></div>
+  </div>
+ 
+  <div id="cardNumber-container">
+    <label for="card-number">CARD NUMBER</label>
+    <input type="text" class="form-input" id="card-number" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+  <div class="err" id="nmbrErr"></div>
+  </div>
+ 
+  <div id="cardBack-container">
+    <div id="cardBack-left">
+        <label for="">EXP. DATE (MM/YY)</label>
+        <div id="cardBackLeft-inputs">
+            <div id="cardMM-container">
+              <input type="text" class="form-input" id="card-mm" maxlength="2" placeholder="MM">
+            </div>
+
+            <div id="cardYY-container">
+              <input type="text" class="form-input" id="card-yy" maxlength="2" placeholder="YY">
+            </div>
+        </div> 
+        <div class="err" id="mmyyErr"></div>
+    </div>
+
+    <div id="cardCvc-container">
+      <label for="card-cvc">CVC</label>
+      <input type="text" id="card-cvc" class="form-input" maxlength="3" placeholder="e.g. 123">
+    <div class="err" id="cardcvcErr"></div>
+    </div>
+
+  </div>
+  <button type="submit" id="confirm">Confirm</button>
+</form> 
+
+    </div> 
+
+
+
+
+
+  </main>
+
+<!-- <form id="form-container">
+
+  <div id="cardName-container">
+    <label for="card-name">CARDHOLDER NAME</label>
+    <input type="text" class="form-input" id="card-name" placeholder="e.g Jane Appleseed">
+  </div>
+
+  <div id="cardNumber-container">
+    <label for="card-number">CARD NUMBER</label>
+    <input type="number" class="form-input" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
+  </div>
+
+  <div id="cardBack-container">
+    <div id="cardBack-left">
+        <label for="">EXP. DATE (MM/YY)</label>
+        <div id="cardBackLeft-inputs">
+            <div id="cardMM-container">
+              <input type="number" class="form-input" id="card-mm" placeholder="MM">
+            </div>
+
+            <div id="cardYY-container">
+              <input type="number" class="form-input" id="card-yy" placeholder="YY">
+            </div>
+        </div> 
+        
+    </div>
+
+    <div id="cardCvc-container">
+      <label for="card-cvc">CVC</label>
+      <input type="number" id="card-cvc" class="form-input" placeholder="e.g. 123">
+    </div>
+
+  </div>
+  <button type="submit" id="confirm">Confirm</button>
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="attribution">
+Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+Coded by <a href="#">Your Name Here</a>.
+</div> -->
+
+<script src="./app.js"></script>
+</body>
+</html>
